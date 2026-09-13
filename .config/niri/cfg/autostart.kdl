@@ -1,6 +1,6 @@
 // ────────────── Startup Applications ──────────────
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Miscellaneous#spawn-sh-at-startup
-    
+
     // noctalia-shell
     spawn-sh-at-startup "QT_QPA_PLATFORMTHEME=qt6ct qs -d -c noctalia-shell"
     spawn-at-startup "wl-paste" "--type" "image" "--watch" "cliphist" "store"
@@ -10,7 +10,7 @@
 
     // background
     spawn-at-startup "awww-daemon"
-    spawn-at-startup "awww" "img" "/home/akaduy/Pictures/Wallpapers/bocchi-4.png" "--resize" "crop"
+    spawn-sh-at-startup "awww img \"$HOME/Pictures/Wallpapers/bocchi-4.png\" --resize crop"
 
     // app
     spawn-at-startup "brave-origin"
