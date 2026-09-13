@@ -46,6 +46,15 @@ window-rule {
     open-on-workspace "stuff"
 }
 
+window-rule {
+    match app-id="^Alacritty$"
+
+    background-effect {
+        blur true
+        xray false
+    }
+}
+
 gestures {
     dnd-edge-view-scroll {
         trigger-width 30
@@ -62,4 +71,11 @@ gestures {
     hot-corners {
         top-left
     }
+}
+
+blur {
+    passes 2 
+    offset 4.0
+    noise 0.01     
+    saturation 1.50
 }
