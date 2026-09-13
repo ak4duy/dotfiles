@@ -12,6 +12,7 @@ pkgs=(
   neovim
   quickshell
   zed
+  tmux
 )
 
 "${install[@]}" "${pkgs[@]}"
