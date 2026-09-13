@@ -1,0 +1,41 @@
+animations {
+    window-open {
+        duration-ms 180
+        curve "cubic-bezier" 0.18 0.95 0.22 1.03
+    }
+
+    window-close {
+        duration-ms 140
+        curve "cubic-bezier" 0.12 0.92 0.08 1.0
+    }
+
+    horizontal-view-movement {
+        spring damping-ratio=0.85 stiffness=900 epsilon=0.0001
+    }
+
+    window-movement {
+        spring damping-ratio=0.82 stiffness=850 epsilon=0.0001
+    }
+
+    window-resize {
+        spring damping-ratio=0.85 stiffness=850 epsilon=0.0001
+    }
+
+    workspace-switch {
+        off
+        // spring damping-ratio=0.9 stiffness=1000 epsilon=0.0001
+    }
+
+    overview-open-close {
+        spring damping-ratio=0.85 stiffness=900 epsilon=0.0001
+    }
+
+    config-notification-open-close {
+        spring damping-ratio=0.6 stiffness=1000 epsilon=0.001
+    }
+
+    screenshot-ui-open {
+        duration-ms 180
+        curve "ease-out-quad"
+    }
+}

@@ -1,0 +1,65 @@
+workspace "web" {}
+workspace "chat" {}
+workspace "code" {}
+workspace "term" {}
+
+window-rule {
+    match app-id="brave-origin"
+    open-on-workspace "web"
+    open-maximized-to-edges true
+}
+
+// brave-origin extension
+window-rule {
+    match app-id="brave-amfojhdiedpdnlijjbhjnhokbnohfdfb-Default"
+    open-on-workspace "web"
+    open-floating true
+    default-column-width { fixed 800; }
+    default-window-height { fixed 800; }
+}
+
+window-rule {
+    match app-id="Element"
+    open-on-workspace "chat"
+    open-maximized-to-edges true
+}
+
+window-rule {
+    match app-id="discord"
+    open-on-workspace "chat"
+    open-maximized-to-edges true
+}
+
+window-rule {
+    match app-id="dev.zed.Zed"
+    open-on-workspace "code"
+    open-maximized-to-edges true
+}
+
+window-rule {
+    match app-id="steam" title="^Steam$"
+    open-on-workspace "term"
+}
+
+window-rule {
+    match app-id="eu.betterbird.Betterbird"
+    open-on-workspace "stuff"
+}
+
+gestures {
+    dnd-edge-view-scroll {
+        trigger-width 30
+        delay-ms 100
+        max-speed 1500
+    }
+
+    dnd-edge-workspace-switch {
+        trigger-height 50
+        delay-ms 100
+        max-speed 1500
+    }
+
+    hot-corners {
+        top-left
+    }
+}
