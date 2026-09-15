@@ -25,7 +25,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="discord"
+    match app-id="vesktop"
     open-on-workspace "chat"
     open-maximized-to-edges true
 }
