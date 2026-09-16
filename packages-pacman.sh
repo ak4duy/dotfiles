@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -e
 
-install=(paru -S --needed)
+install=(yay -S --needed)
 
 pkgs=(
   alacritty
