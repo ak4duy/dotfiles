@@ -1,11 +1,5 @@
 source /usr/share/cachyos-fish-config/cachyos-config.fish
 
-# overwrite greeting
-# potentially disabling fastfetch
-#function fish_greeting
-#    # smth smth
-#end
-
 # super alias by aka duy
 alias rm='trash-put'
 alias trash='trash-list'
@@ -15,16 +9,6 @@ alias e='exit'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias gp='git push'
-function gc
-    git checkout $argv
-end
-function gd
-    if test (count $argv) -eq 0
-        git diff | wl-copy
-    else
-        git diff $argv | wl-copy
-    end
-end
 
 # terminal-wakatime setup
 set -gx PATH "$HOME/.wakatime" $PATH
