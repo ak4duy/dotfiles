@@ -8,7 +8,7 @@ body = """
 {% for group, commits in commits | group_by(attribute="group") %}
     ### {{ group | striptags | trim | upper_first }}
     {% for commit in commits %}
-        - {{ commit.raw_message | split(pat="\n") | first }} #{{ commit.id | truncate(length=7, end="") }} by @{{ commit.remote.username | default(value=commit.author.name) }}\
+        - {{ commit.raw_message | split(pat="\n") | first }} {{ commit.id | truncate(length=7, end="") }} \
     {% endfor %}
 {% endfor %}
 """
