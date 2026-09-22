@@ -1,12 +1,13 @@
 #!/usr/bin/env bash
 set -e
 
-install=(yay -S --needed)
+install=(pacman -S --needed)
 
 pkgs=(
   alacritty
   fastfetch
   fish
+  git-cliff
   niri
   noctalia-shell
   neovim
