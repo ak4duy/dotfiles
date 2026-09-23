@@ -102,21 +102,21 @@ binds {
     Mod+2                               { focus-workspace "chat"; }
     Mod+3                               { focus-workspace "code"; }
     Mod+4                               { focus-workspace "work"; }
-    Mod+5                               { focus-workspace "term"; }
-    Mod+6                               { focus-workspace 6; }
-    Mod+7                               { focus-workspace 7; }
-    Mod+8                               { focus-workspace 8; }
-    Mod+9                               { focus-workspace 9; }
+    Mod+CTRL+1                          { focus-workspace "term"; }
+    Mod+CTRL+2                          { focus-workspace 6; }
+    Mod+CTRL+3                          { focus-workspace 7; }
+    Mod+CTRL+4                          { focus-workspace 8; }
+    Mod+CTRL+5                          { focus-workspace 9; }
 
-    Mod+SHIFT+1 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh web"; }
-    Mod+SHIFT+2 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh chat"; }
-    Mod+SHIFT+3 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh code"; }
-    Mod+SHIFT+4 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh work"; }
-    Mod+SHIFT+5 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh term"; }
-    Mod+SHIFT+6 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 6"; }
-    Mod+SHIFT+7 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 7"; }
-    Mod+SHIFT+8 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 8"; }
-    Mod+SHIFT+9 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 9"; }
+    Mod+SHIFT+1      { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh web"; }
+    Mod+SHIFT+2      { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh chat"; }
+    Mod+SHIFT+3      { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh code"; }
+    Mod+SHIFT+4      { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh work"; }
+    Mod+CTRL+SHIFT+1 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh term"; }
+    Mod+CTRL+SHIFT+2 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 6"; }
+    Mod+CTRL+SHIFT+3 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 7"; }
+    Mod+CTRL+SHIFT+4 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 8"; }
+    Mod+CTRL+SHIFT+5 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 9"; }
 
     ALT+TAB                             { focus-workspace-previous; }
 
