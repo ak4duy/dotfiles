@@ -15,3 +15,4 @@
     // app
     spawn-at-startup "brave-origin"
     spawn-at-startup "Element"
+    spawn-at-startup "strawberry"
