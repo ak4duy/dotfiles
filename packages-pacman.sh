@@ -14,6 +14,7 @@ pkgs=(
   quickshell
   zed
   tmux
+  git-cliff
 )
 
 "${install[@]}" "${pkgs[@]}"
