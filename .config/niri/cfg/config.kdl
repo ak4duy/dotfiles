@@ -42,15 +42,21 @@ window-rule {
 }
 
 window-rule {
+    match app-id="^steam_app_" 
+    open-on-workspace "code"
+}
+
+window-rule {
     match app-id="steam" title="^Steam$"
     open-on-workspace "term"
-    default-column-width { proportion 0.5; }
+    default-column-width { proportion 0.75; }
 }
 
 window-rule {
     match app-id="^org.strawberrymusicplayer.strawberry$"
     open-on-workspace "term"
-    default-column-width { proportion 0.35; }
+    default-column-width { proportion 0.5; }
+    default-window-height { proportion 0.65; }
 }
 
 window-rule {
