@@ -49,7 +49,7 @@ window-rule {
 window-rule {
     match app-id="steam" title="^Steam$"
     open-on-workspace "term"
-    default-column-width { proportion 0.75; }
+    default-column-width { proportion 0.5; }
 }
 
 window-rule {
