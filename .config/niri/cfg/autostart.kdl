@@ -12,6 +12,9 @@
     spawn-at-startup "awww-daemon"
     spawn-sh-at-startup "awww img \"$HOME/Pictures/Wallpapers/bocchi-4.png\" --resize crop"
 
+    // 11–20 vertical stack
+    spawn-sh-at-startup "python3 \"$HOME/.config/niri/cfg/bin/niri-portrait-stack.py\""
+
     // app
     spawn-at-startup "brave-origin"
     spawn-at-startup "Element"

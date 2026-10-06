@@ -53,6 +53,9 @@ binds {
     Mod+Down                            { focus-window-down; }
     Mod+K                               { focus-window-down; }
 
+    Mod+I       hotkey-overlay-title="Stack window below" { consume-window-into-column; }
+    Mod+Shift+I hotkey-overlay-title="Unstack window" { expel-window-from-column; }
+
     Mod+SHIFT+Left                     { move-column-left; }
     Mod+SHIFT+H                          { move-column-left; }
     Mod+CTRL+H                          { move-column-left; }
@@ -98,25 +101,27 @@ binds {
     Mod+CTRL+Shift+WheelScrollDown      { move-column-right; }
     Mod+CTRL+Shift+WheelScrollUp        { move-column-left; }
 
-    Mod+1                               { focus-workspace "web"; }
-    Mod+2                               { focus-workspace "chat"; }
-    Mod+3                               { focus-workspace "code"; }
-    Mod+4                               { focus-workspace "work"; }
-    Mod+CTRL+1                          { focus-workspace "term"; }
-    Mod+CTRL+2                          { focus-workspace 6; }
-    Mod+CTRL+3                          { focus-workspace 7; }
-    Mod+CTRL+4                          { focus-workspace 8; }
-    Mod+CTRL+5                          { focus-workspace 9; }
+    Mod+1      { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 1"; }
+    Mod+2      { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 2"; }
+    Mod+3      { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 3"; }
+    Mod+4      { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 4"; }
+    Mod+CTRL+1 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 5"; }
+    Mod+CTRL+2 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 6"; }
+    Mod+CTRL+3 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 7"; }
+    Mod+CTRL+4 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 8"; }
+    Mod+CTRL+5 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 9"; }
+    Mod+CTRL+6 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" switch 10"; }
 
-    Mod+SHIFT+1      { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh web"; }
-    Mod+SHIFT+2      { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh chat"; }
-    Mod+SHIFT+3      { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh code"; }
-    Mod+SHIFT+4      { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh work"; }
-    Mod+CTRL+SHIFT+1 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh term"; }
-    Mod+CTRL+SHIFT+2 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 6"; }
-    Mod+CTRL+SHIFT+3 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 7"; }
-    Mod+CTRL+SHIFT+4 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 8"; }
-    Mod+CTRL+SHIFT+5 { spawn-sh "$HOME/.config/niri/cfg/bin/niri-move-silent.sh 9"; }
+    Mod+SHIFT+1      { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 1"; }
+    Mod+SHIFT+2      { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 2"; }
+    Mod+SHIFT+3      { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 3"; }
+    Mod+SHIFT+4      { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 4"; }
+    Mod+CTRL+SHIFT+1 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 5"; }
+    Mod+CTRL+SHIFT+2 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 6"; }
+    Mod+CTRL+SHIFT+3 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 7"; }
+    Mod+CTRL+SHIFT+4 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 8"; }
+    Mod+CTRL+SHIFT+5 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 9"; }
+    Mod+CTRL+SHIFT+6 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 10"; }
 
     ALT+TAB                             { focus-workspace-previous; }
 

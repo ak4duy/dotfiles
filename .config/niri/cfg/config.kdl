@@ -1,10 +1,84 @@
-workspace "web" {}
-workspace "chat" {}
-workspace "code" {}
-workspace "work" {}
-workspace "term" {
+// DP-1 slots 1–10
+workspace "web" { open-on-output "DP-1"; }
+workspace "chat" { open-on-output "DP-1"; }
+workspace "code" { open-on-output "DP-1"; }
+workspace "work" { open-on-output "DP-1"; }
+workspace "term" {open-on-output "DP-1"; }
+workspace "6" { open-on-output "DP-1"; }
+workspace "7" { open-on-output "DP-1"; }
+workspace "8" { open-on-output "DP-1"; }
+workspace "9" { open-on-output "DP-1"; }
+workspace "10" { open-on-output "DP-1"; }
+
+// HDMI-A-1 slots 11-20, vertical setup
+workspace "11" {
+    open-on-output "HDMI-A-1"
     layout {
-        default-column-width { proportion 0.25; }
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
+    }
+}
+workspace "12" {
+    open-on-output "HDMI-A-1"
+    layout {
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
+    }
+}
+workspace "13" {
+    open-on-output "HDMI-A-1"
+    layout {
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
+    }
+}
+workspace "14" {
+    open-on-output "HDMI-A-1"
+    layout {
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
+    }
+}
+workspace "15" {
+    open-on-output "HDMI-A-1"
+    layout {
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
+    }
+}
+workspace "16" {
+    open-on-output "HDMI-A-1"
+    layout {
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
+    }
+}
+workspace "17" {
+    open-on-output "HDMI-A-1"
+    layout {
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
+    }
+}
+workspace "18" {
+    open-on-output "HDMI-A-1"
+    layout {
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
+    }
+}
+workspace "19" {
+    open-on-output "HDMI-A-1"
+    layout {
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
+    }
+}
+workspace "20" {
+    open-on-output "HDMI-A-1"
+    layout {
+        default-column-width { proportion 1.0; }
+        default-column-display "normal"
     }
 }
 
@@ -42,7 +116,7 @@ window-rule {
 }
 
 window-rule {
-    match app-id="^steam_app_" 
+    match app-id="^steam_app_"
     open-on-workspace "code"
 }
 
@@ -97,8 +171,8 @@ gestures {
 }
 
 blur {
-    passes 2 
+    passes 2
     offset 4.0
-    noise 0.01     
+    noise 0.01
     saturation 1.50
 }
