@@ -3,7 +3,17 @@
 // You will have to remove "/-" and edit it before it takes effect.
 // https://github.com/YaLTeR/niri/wiki/Configuration:-Outputs
 
-/- output "DP-1" {
-    mode "2560x1440@359.979" // Set resolution and refresh rate
-    scale 1 // No scaling (use 2 for HiDPI)
+output "PNP(AOC) Q27B36X XI7S5HA013963" {
+    mode "2560x1440@144.002" 
+    scale 1
+    transform "normal"
+    position x=1080 y=0
+    focus-at-startup
+}
+
+output "Lenovo Group Limited L24D-4C URHR69DM" {
+    mode "1920x1080@143.847"
+    scale 1
+    transform "270"
+    position x=0 y=0
 }
