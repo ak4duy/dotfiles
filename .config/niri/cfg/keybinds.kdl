@@ -124,6 +124,8 @@ binds {
     Mod+CTRL+SHIFT+6 { spawn-sh "bash \"$HOME/.config/niri/cfg/bin/niri-workspace.sh\" move 10"; }
 
     ALT+TAB                             { focus-workspace-previous; }
+    Mod+Shift+TAB                             { focus-monitor-next; }
+
 
     // ─── Layout Controls ───
     Mod+CTRL+F                          { expand-column-to-available-width; }
