@@ -99,13 +99,13 @@ window-rule {
 
 window-rule {
     match app-id="Element"
-    open-on-workspace "chat"
+    open-on-workspace "13"
     open-maximized-to-edges true
 }
 
 window-rule {
     match app-id="vesktop"
-    open-on-workspace "chat"
+    open-on-workspace "13"
     open-maximized-to-edges true
 }
 
@@ -115,6 +115,7 @@ window-rule {
     open-maximized-to-edges true
 }
 
+// not code xd
 window-rule {
     match app-id="^steam_app_"
     open-on-workspace "code"
@@ -122,15 +123,14 @@ window-rule {
 
 window-rule {
     match app-id="steam" title="^Steam$"
-    open-on-workspace "term"
+    open-on-workspace "14"
     default-column-width { proportion 0.5; }
 }
 
 window-rule {
     match app-id="^org.strawberrymusicplayer.strawberry$"
-    open-on-workspace "term"
+    open-on-workspace "14"
     default-column-width { proportion 0.5; }
-    default-window-height { proportion 0.65; }
 }
 
 window-rule {
