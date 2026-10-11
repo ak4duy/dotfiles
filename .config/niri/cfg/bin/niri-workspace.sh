@@ -42,6 +42,6 @@ case "$operation" in
         niri msg action focus-workspace "$index"
         ;;
     move)
-        niri msg action move-column-to-workspace --focus false "$index"
+        niri msg action move-window-to-workspace --focus false "$index"
         ;;
 esac
