@@ -133,10 +133,11 @@ binds {
     Mod+W                               { toggle-column-tabbed-display; }
 
     // ─── Screenshots ───
-    PRINT                               { screenshot; }
-    CTRL+Shift+2                        { screenshot-screen; }
-    CTRL+Shift+3                        { screenshot-window; }
-
+    PRINT                               { spawn-sh "noctalia msg screenshot-region"; }
+    CTRL+PRINT                          { spawn-sh "noctalia msg screenshot-fullscreen pick";}
+    SHIFT+PRINT                          { spawn-sh "noctalia msg screenshot-fullscreen all";}
+    ALT+PRINT                           { spawn-sh "noctalia msg annotate";}
+    
     // Recording - OBS
     // ALT+F1 allow-inhibiting=false cooldown-ms=150 hotkey-overlay-title="OBS: Toggle Recording" {
     //     spawn-sh "obs-cmd recording toggle; notify-send -i media-record 'OBS' 'Recording toggled'";
