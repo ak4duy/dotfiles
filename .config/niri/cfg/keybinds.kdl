@@ -115,7 +115,7 @@ binds {
 
     ALT+TAB                             { focus-workspace-previous; }
     Mod+Shift+TAB                             { focus-monitor-next; }
-
+    MOD+TAB                            { spawn-sh "noctalia msg window-switcher hold"; }
 
     // ─── Layout Controls ───
     Mod+CTRL+F                          { expand-column-to-available-width; }
