@@ -11,6 +11,9 @@ body = """
         - {{ commit.raw_message | split(pat="\n") | first }} {{ commit.id | truncate(length=7, end="") }} \
     {% endfor %}
 {% endfor %}
+{% if version and previous and previous.version %}
+    #### Full Changelog: {{ previous.version }}...{{ version }}
+{% endif %}
 """
 trim = true
 render_always = true
