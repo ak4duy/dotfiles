@@ -11,7 +11,7 @@
 
     // background
     spawn-at-startup "awww-daemon"
-    spawn-sh-at-startup "awww img \"$HOME/Pictures/Wallpapers/bocchi-4.png\" --resize crop"
+    spawn-sh-at-startup "awww img \"/run/media/akaduy/SATA/Personal/dotfiles/wallpaper/bocchi-4-1440.png\" --resize crop"
 
     // 11–20 vertical stack
     spawn-sh-at-startup "python3 \"$HOME/.config/niri/cfg/bin/niri-portrait-stack.py\""
