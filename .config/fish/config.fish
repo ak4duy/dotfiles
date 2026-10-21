@@ -11,8 +11,7 @@ alias ...='cd ../..'
 alias gp='git push'
 
 # coding
-alias review-diff='kero new -f -n "local review diff" -- agy --model gemini-4-argon-medium -i "/code-reviewer
-  review local changes"'
+alias review-diff='kero new -f -n "local review diff" -- agy --model gemini-4-argon-medium -i "/code-reviewer review only the changes shown by git diff HEAD, do not review unrelated files"'
 
 # terminal-wakatime setup
 set -gx PATH "$HOME/.wakatime" $PATH
