@@ -10,6 +10,10 @@ alias ..='cd ..'
 alias ...='cd ../..'
 alias gp='git push'
 
+# coding
+alias review-diff='kero new -f -n "local review diff" -- agy --model gemini-4-argon-medium -i "/code-reviewer
+  review local changes"'
+
 # terminal-wakatime setup
 set -gx PATH "$HOME/.wakatime" $PATH
 terminal-wakatime init fish | source
