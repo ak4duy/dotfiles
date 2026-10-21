@@ -30,6 +30,3 @@ zoxide init fish | source
 starship init fish | source
 
 fish_add_path $HOME/go/bin $HOME/.spicetify $HOME/.cargo/bin $HOME/.local/bin
-
-# Added by Antigravity CLI installer
-set -gx PATH "/home/akaduy/.local/bin" $PATH
